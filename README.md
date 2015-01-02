@@ -26,7 +26,8 @@ To get started with your exercises, first make sure that you have a free GitHub 
 * This will create a folder called `mean-exercises`. You can go into the folder by typing `cd mean-exercises`.
 * You can now open this project by:
 	- Opening WebStorm, and selecting `File > New Project from Existing Files`.
-	- Select 'Source files are in a local directory, no Web server is yet configured'. - Navigate to the `mean-exercises` directory and mark it as Project Root. (the WS icon)
+	- Select 'Source files are in a local directory, no Web server is yet configured'.
+	- Navigate to the `mean-exercises` directory and mark it as Project Root. (the WS icon)
 	- Click finish.
 * Make sure to create a folder for each new exercise.
 
