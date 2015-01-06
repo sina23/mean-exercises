@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<!--
+You are building an online messaging app.
+
+One of the features you have been asked to implement is a contact list.
+The user's contact names are pre-loaded in the "contact_names" variable as an array.
+
+The contact names must be displayed in the #contact-names unordered list using the <li> tag.
+There are two ways to sort the contacts: by first name and by last name.
+You must implement the sorting buttons. The default sort is by first name.
+When sorting by first name, the contact names should be displayed in the format [first middle last].
+When sorting by last name, the contact names should be displayed in the format [last, first middle].
+
+(Hint: in javascript, comparing two strings will compare the alphabetical position
+of the first letter of each string, e.g. 'Albert' < 'Tom' => true
+However, this only works if the letters are both uppercase or both lowercase, e.g. 'albert' < 'Tom' => false)
+-->
+
+<html>
+	<head>
+		<title>Listing Names</title>
+		
+		<!-- our css -->
+		<link rel="stylesheet" href="contact-list.css">
+	</head>
+	
+	<body>
+		<div id="contacts">
+			<h3>
+				Contact List
+			</h3>
+			<!-- sorting buttons -->
+			<div class="sorting-buttons">
+				Sort: <button>First Last</button> <button>Last, First</button>
+			</div>
+			<!-- list of names -->
+			<ul id="contact-names">
+				<!-- contacts go here -->
+			</ul>
+		</div>
+	
+		<script type="text/javascript">
+			var contact_names = [
+				'Marty McFly',
+				'Dr. Emmet Brown',
+				'George McFly',
+				'Biff Tannen',
+				'Jennnifer Parker',
+				'Dave McFly',
+				'Linda McFly',
+				'Parker Lusk McFly'
+			];
+			
+			// write your code here
+		</script>
+	</body>
+</html>
