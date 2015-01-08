@@ -36,3 +36,34 @@ To get started with your exercises, first make sure that you have a free GitHub 
 ## How to Submit ##
 
 You will submit your code to be reviewed by committing your changes through git, and then pushing to your own repo that you forked. Your code will be code reviewed to give you the necessary feedback so that you can learn best practices.
+
+### Appendix: Resyncing your fork with this repo ###
+
+Every once and a while, this repo will be updated with exercises, errata, and other information. You will want these changes in your own forked repo so that you can continue working on exercises. To do this, you have to resync your repo with this repo.
+
+The following commands explain how to do this:
+
+```bash
+# add a remote called 'upstream' that points to the original repo:
+git remote add upstream https://github.com/CodingCampus/mean-exercises.git
+
+# Fetch all the branches of that remote into remote-tracking branches,
+# such as upstream/master:
+
+git fetch upstream
+
+# Make sure that you're on your own repo's master branch:
+
+git checkout master
+
+# Rewrite your master branch so that any commits of yours that
+# aren't already in upstream/master are replayed on top of that
+# other branch:
+
+git rebase upstream/master
+
+# Force push your updated repo to your github remote repo
+git push -f origin master
+```
+
+[See Stack Overflow answer](http://stackoverflow.com/a/7244456/2392520)
